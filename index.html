@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <title>Cinder - Professora de Música</title>
+  </head>
+  <body>
+    
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7682ac;">
+      <div class="container">
+    
+      <a class="navbar-brand h1 mb-0" href="#">Cinder</a>
+    
+      <!-- Toglle Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- NavBar Menu -->
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav" mr-auto>
+          <li class="nav-item">
+            <a class="nav-link" href="#aulas">Aulas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#videos">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+        </ul>
+
+        <!-- Social Media Menu -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toglle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://www.facebook.com/Cinder-Sidharta-191964434765580" target="blank">Facebook</a>
+              <a class="dropdown-item" href="https://www.youtube.com/channel/UCaBdFeUNt7L71Oez8GbSPVQ" target="blank">Youtube</a>
+              <a class="dropdown-item" href="https://www.instagram.com/cinder_sidharta/" target="blank">Instagram</a>
+            </div>
+          </li>
+        </ul>
+        <!-- Search -->
+          <form class="form-inline">
+            <table>
+              <tr>
+              <td><input class="form-control ml-4 mr-2" type="search" placeholder="Buscar..." id="searchTxt"></td>
+              <td><input class="btn" type="button" style="background-color:#221e40; color:white;" value="Ok" id="searchBtn" onclick="doSearch(document.getElementById('searchTxt').value)"></td>
+          </tr>
+          </table>
+          </form>
+
+      </div>
+      </div>
+    </nav>
+
+<!-- Carousel -->
+
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselSite" data-slide-to="1"></li>
+        <li data-target="#carouselSite" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/cantando.jpg" class="img-fluid d-block mx-auto" style="filter: blur(5px);">
+          <div class="carousel-caption d-none d-md-block" style="color: #f272dd;">
+            <h1>Canto</h1>
+            <p>Seja você mesmo o seu próprio Instrumento</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/teclado.jpg" class="img-fluid d-block mx-auto" style="filter: blur(5px);">
+          <div class="carousel-caption d-none d-md-block" style="color: #f272dd;">
+            <h1>Teclado e Piano</h1>
+            <p>Conheça o instrumento mais usado para acompanhamentos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/violao.jpg" class="img-fluid d-block mx-auto" style="filter: blur(5px);">
+          <div class="carousel-caption d-none d-md-block" style="color: #f272dd;">
+            <h1>Violão e Ukulele</h1>
+            <p>Instrumentos como o violão e o Ukulele são conhecidos como companheiros dos cantores</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only">Avançar</span>
+      </a>
+    </div>
+
+    <div></div>
+
+<!-- Welcome -->
+
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-12" id="perfil">
+          <h1 class="display-3"><i class="fa fa-trophy" style="color: #221e40;"></i> Alcance coisas novas!</h1>
+            <p>Aprenda a conhecer o instrumento dentro de você e dominá-lo!</p>
+        </div>
+      </div>
+
+<!-- Sections Menu -->
+      <div class="row mb-5 my-5 text-left">
+        <div class="col-sm-6 col-md-4 mb-3">
+          <nav id="navbarVertical" class="nav navbar-light">
+            <nav class="nav nav-pils flex-column">
+              <a class="nav-link linkInternoSite" href="#item1">Qualquer um pode aprender música?</a>
+              <nav class="nav nav-pils flex-column">
+                <a class="nav-link ml-3  linkInternoSite" href="#item1-1">Só posso cantar se tiver talento?</a>
+                <a class="nav-link ml-3  linkInternoSite" href="#item1-2">Tocar algum instrumento pode me ajudar?</a>
+              </nav>
+              <a class="nav-link my-2  linkInternoSite" href="#item2">Em quanto tempo vou saber cantar?</a>
+              <a class="nav-link my-2  linkInternoSite" href="#item3">É normal sentir a garganta doer depois de cantar?</a>
+            </nav>
+          </nav>
+        </div>
+
+<!-- Sections -->
+
+        <div class="col-sm-6 col-md-8 my-1">
+          <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+            <h4 id="item1">Qualquer um pode aprender música?</h4>
+            <p>Absolutamente sim! Como tudo na vida, pessoas são capazes de aprender o que quiserem, no nível em que acharem satisfatório.</p>
+
+            <h5 id="item1-1">Só posso cantar se tiver talento?</h5>
+            <p>O talento sem esforço costuma ser superado pelo trabalho duro e no meio artístico, pessoas que normalmente não se consideram talentosos ganham destaque e prestígio.
+              Dedicação e estudos são a base da boa execução da arte. É claro que ter talento, ou facilidade de aprendizado ajudam bastante, mas não é um elemento indispensável.
+            </p>
+
+            <h5 id="item1-2">Tocar algum instrumento pode me ajudar?</h5>
+            <p>Uma das melhores maneiras de melhorar seus entendimentos sobre como a música funciona é através de algum instrumento, principalmente o piano. A partir de certo ponto de sua carreira como cantor, seja profissional ou por diversão, O conhecimento da teoria se torna um dos requisitos para sua evolução musical.
+              A maioria dos seres humanos lida melhor com uma forma de aprendizado mais "visual", ou seja, quando enxergam o que estão fazendo. Os instrumentos musicais entregam essa experiência, permitindo que você veja o que está fazendo e entenda melhor o que está ouvindo.
+            </p>
+
+            <h4 id="item2">Em quanto tempo vou saber cantar?</h4>
+            <p>A verdade é que nunca paramos de aprender a cantar. Muitos cantores se dão por satisfeitos quando conseguem cantar as suas canções favoritas, outros se satisfazem em dominar o máximo de técnicas possíveis.
+              O tempo é um fator que varia muito de pessoa para pessoa, mas ele deixa de ser um problema quando o músico estabelece uma meta, um objetivo. Saber "onde" e "como" você quer chegar é mais importante a princípio do que saber "em quanto tempo" você vai atingir o objetivo.
+            </p>
+
+            <h4 id="item3">É normal sentir a garganta doer depois de cantar?</h4>
+            <p>Se sua garganta fica machucada depois de cantar, significa que você está fazendo algo errado. As cordas vocais não suportam fluxos de ar muito grandes e consequentemente toda a musculatura de seu pescoço vai se contrair para impedir que esse grande fluxo de ar prejudique suas cordas vocais.
+              O resultado de tanta tensão e fluxos de ar massivos é a sensação de fadiga e aspereza na garganta, por isso, não se canta "fazendo força".
+            </p>
+          </div>
+        </div>
+      </div>
+
+<!-- Cards -->
+
+<div class="container text-center my-5">
+  <div class="row">
+    <div class="col-12" id="aulas">
+      <h1 class="display-3"><i class="fa fa-music" style="color: #221e40;"></i> Aulas</h1>
+        <p>Conheça um pouco do que você pode aprender comigo</p>
+    </div>
+  </div>
+
+      <div class="row justify-content-sm-center">
+        <div class="col-sm-6 col-md-4 mb-5">
+          <div class="card">
+            <img class="card-img-top" src="img/canto.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Aulas de Canto</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Erudito, Popular e infantil</h6>
+              <p class="card-text">Não existe idade para aprender a cantar. O quanto você pode evoluir só depende de você</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Exercícios de Respiração</li>
+              <li class="list-group-item">Técnicas de projeção vocal</li>
+              <li class="list-group-item">Inicialização Infantil</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalCanto">Ver mais</a>
+              <a href="#" class="card-link  linkInternoSite">Acessar</a>
+            </div>
+            <div class="card-footer text-muted">Rodapé do Card</div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4  mb-5">
+          <div class="card">
+            <img class="card-img-top" src="img/violao.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Violão e Ukulele</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Instruções básicas e rudimentos</h6>
+              <p class="card-text">Uma infinidade de suas músicas favoritas podem ser tocadas nesses instrumentos que são fáceis de levar para qualquer lugar</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Ensino Infantil</li>
+              <li class="list-group-item">Exercícios para iniciantes</li>
+              <li class="list-group-item">Músicas populares</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalViolao">Ver mais</a>
+              <a href="#" class="card-link  linkInternoSite">Valores</a>
+            </div>
+            <div class="card-footer text-muted">Ki</div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 mb-5">
+          <div class="card">
+            <img class="card-img-top" src="img/piano.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Teclado e Piano</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Teoria musical auxiliar</h6>
+              <p class="card-text">Teclado e piano são muito procurados por quem quer aprender teoria musical de uma forma simples e divertida</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Exercícios para iniciantes</li>
+              <li class="list-group-item">Teoria musical básica</li>
+              <li class="list-group-item">Acompanhamento</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalTeclado">Ver mais</a>
+              <a href="#" class="card-link  linkInternoSite">Acessar</a>
+            </div>
+            <div class="card-footer text-muted">Rodapé do Card</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+      <!--Jumbotron-->
+
+    <div class="jumbotron jumbotron-fluid" id="videos" style="background: radial-gradient(circle, rgba(118,130,166,1) 0%, rgba(118,130,166,1) 0%, rgba(255,255,255,1) 100%);">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-4"><i class="fa fa-film" style="color: #221e40;"></i> Vídeos</h1>
+            <p class="lead">Conheça um pouco dos covers que faço no meu tempo livre</p>
+            <hr>
+          </div>
+        </div>
+
+<!--NavPills-->
+
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active linkJumbotron" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Cinder Sidharta - Everdream (Nightwish Cover)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkJumbotron" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">A noiva cadáver - Ele ainda te conhece tão mal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkJumbotron" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Tomorrow - Annie the musical</a>
+              </li>
+            </ul>
+
+<!--Embeded-->
+
+            <div class="tab-content" id="nav-pills-content">
+              <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="embed-responsive embed-responsive-16by9 justify-content-center">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/uFVIMAlCdb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/lia0GMiSyqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/yvOcu2d_wvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+     <!--Formulario-->
+
+     <div class="container" id="depoimentos">
+      <div class="row">
+        <div class="col-12 text-center my-5">
+          <h1 class="display-4"><i class="fa fa-paper-plane-o" aria-hidden="true" style="color: #221e40;"></i> Deixe uma mensagem </h1>
+          <p class="lead">Se você é ou já foi meu aluno, deixe sua mensagem sobre sua experiência com minhas aulas</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-sm-12 col-md-10 col-lg-8 ">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <label for="inputNome">Seu Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-sm-4">
+                <label for="inputCel">Seu Telefone</label>
+                <input type="text" class="form-control" id="inputCel" placeholder="Celular">
+              </div>
+              <div class="form-group col-sm-8">
+                <label for="inputEmail">Seu E-mail</label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="E-mail">
+              </div>
+            </div>
+              
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+              <label for="inputNome">Seu comentário</label>
+                <textarea type="text" class="form-control" id="inputComent" placeholder="Texto"></textarea>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Desejo receber novidades por e-mail
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-sm-12">
+                <button type="submit" class="btn text-light" style="background-color: #221e40;">Enviar</button>
+                <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Texto de ajuda" data-content="Texto que vai dentro do Popover para ajudar o Usuário a preencher o formulário">Ajuda</a>
+              </div>
+            </div>
+
+          </div>
+
+          
+
+          </form>
+        </div>
+
+        <!--Footer-->
+
+        <div class="row" id="sobre">
+          <div class="col-12 mb-3"><hr></div>
+  
+          <div class="col-sm-4">
+            <img src="img/Nene.jpg" class="img-thumbnail">
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Sobre mim</h3>
+            <p>Professora de Canto Popular e Erudito formada pela Fiam Faam, com mais de 5 anos de experiência em ensino</p>
+            <p>Participei por 2 anos do Coral Juvenil Santa Marcelina, Madrigal Vivace, dentre outros</p>
+          </div>
+
+        <!--Social-->
+
+        <div class="col-sm-4">
+          <h3>Social</h3>
+          <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+            <a class="btn btn-outline-facebook" href="https://www.facebook.com/Cinder-Sidharta-191964434765580" target="blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+            <a class="btn btn-outline-youtube" href="https://www.youtube.com/channel/UCaBdFeUNt7L71Oez8GbSPVQ" target="blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</a>
+            <a class="btn btn-outline-instagram" href="https://www.instagram.com/cinder_sidharta/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+          </div>
+        </div>
+
+<!--Citação-->
+
+<div class="col-12 mt-5">
+  <blockquote class="blockquote text-center">
+    <p class="mb-0">O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho.</p>
+    <footer class="blockquote-footer">
+      Biz Stone <cite title="Título">Fundador do Twitter</cite>
+    </footer>
+  </blockquote>
+</div>
+
+
+       </div>
+
+      </div>
+
+      
+
+
+    <!--Modal-->
+
+    <div class="modal fade" id="modalCanto" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Exercícios de Respiração, desenvolvimento vocal e inicialização infantil</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>x</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Você sabia que quando nascemos, já nascemos sabendo respirar? E que ao longo da vida, criamos hábitos respiratórios ruins que nos fazem "desaprender" a respiração mais correta e eficiente?
+              Essa é a razão pela qual muitos que tentam cantar sem instruções adequadas causam danos ao corpo, dos mais variados tipos. Com os exercícios corretos você reaprende a respirar para usar seu corpo para produzir som sem danos colaterais!
+              Cantores profissionais e amadores podem ser instruídos de forma que consigam extrair o máximo de suas vozes, crianças ou adultos, de qualquer idade podem ter acesso a essas instruções.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalViolao" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Violão e Ukulele para iniciantes</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>x</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Na música costumamos dizer que o violão é o companeiro do cantor. Além de ser um instrumento muito versátil e de fácil transporte, é muito procurado por cantores ou mesmo músicos que queiram começar a carreira nesse instrumento tão popular.
+              Minhas aulas de violão servem para cantores que queiram aprender como usar o violão como auxílio para evoluir musicalmente e crianças que estejam tendo seu primeiro contato com o instrumento.
+              O Ukulele também tem se tornado popular entre a geração de músicos atual devido a facilidade de transporte e versatilidade parecida com a do violão. Ele permite explorar estilos diferentes de música sem deixar de lado a simplicidade.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTeclado" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Ajuda na teoria e inicialização infantil</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>x</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p>O piano ou teclado podem ser instrumentos incrivelmente úteis para o aprendizado da parte teórica da música. Com ele podemos aprender o nome das notas, entender o alcance da nossa voz, treinar o ouvido e muito mais!
+              Quem aprende o instrumento e gosta dele, já inicia um caminho para se especializar e avançar cada vez mais nos infinitos níveis que o Piano oferece.
+              O Piano é o instrumento preferido de muitas crianças que têm seu primeiro contato com a música, pois o simples fato de apertar as teclas entrega diferentes sons, o que desperta o interesse natural das crianças.
+              Com as aulas de inicialização infantil é possível introduzir a criança no mundo da música de maneira divertida e simples, dando o primeiro passo para um mundo de escolhas dentro da música.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Javascript-->
+
+    <script src="./node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js" type="text/javascript"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--Javascript do Popover-->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+
+    <!--Barra de Busca-->
+
+    <script>
+      function doSearch(text) {
+          if (window.find(text)) {
+              console.log(window.find(text));
+          }
+      }
+  </script>
+
+  </body>
+</html>
