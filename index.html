@@ -179,7 +179,7 @@
       <div class="row justify-content-sm-center">
         <div class="col-sm-6 col-md-4 mb-5">
           <div class="card">
-            <img class="card-img-top" src="img/canto.jpg">
+            <img class="card-img-top" src="img/cantoCard.jpg">
             <div class="card-body">
               <h4 class="card-title">Aulas de Canto</h4>
               <h6 class="card-subtitle mb-2 text-muted">Erudito, Popular e infantil</h6>
@@ -191,20 +191,19 @@
               <li class="list-group-item">Inicialização Infantil</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalCanto">Ver mais</a>
-              <a href="#" class="card-link  linkInternoSite">Acessar</a>
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalCanto">Saiba mais</a>
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalValoresCanto">Valores</a>
             </div>
-            <div class="card-footer text-muted">Rodapé do Card</div>
           </div>
         </div>
 
         <div class="col-sm-6 col-md-4  mb-5">
           <div class="card">
-            <img class="card-img-top" src="img/violao.jpg">
+            <img class="card-img-top" src="img/violaoCard.jpg">
             <div class="card-body">
               <h4 class="card-title">Violão e Ukulele</h4>
               <h6 class="card-subtitle mb-2 text-muted">Instruções básicas e rudimentos</h6>
-              <p class="card-text">Uma infinidade de suas músicas favoritas podem ser tocadas nesses instrumentos que são fáceis de levar para qualquer lugar</p>
+              <p class="card-text">Voce pode aprender a tocar suas músicas favoritas nesses instrumentos que são fáceis de levar para qualquer lugar</p>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Ensino Infantil</li>
@@ -212,16 +211,15 @@
               <li class="list-group-item">Músicas populares</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalViolao">Ver mais</a>
-              <a href="#" class="card-link  linkInternoSite">Valores</a>
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalViolao">Saiba mais</a>
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalValoresViolao">Valores</a>
             </div>
-            <div class="card-footer text-muted">Ki</div>
           </div>
         </div>
 
         <div class="col-sm-6 col-md-4 mb-5">
           <div class="card">
-            <img class="card-img-top" src="img/piano.jpg">
+            <img class="card-img-top" src="img/pianoCard.jpg">
             <div class="card-body">
               <h4 class="card-title">Teclado e Piano</h4>
               <h6 class="card-subtitle mb-2 text-muted">Teoria musical auxiliar</h6>
@@ -233,10 +231,9 @@
               <li class="list-group-item">Acompanhamento</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalTeclado">Ver mais</a>
-              <a href="#" class="card-link  linkInternoSite">Acessar</a>
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalTeclado">Saiba mais</a>
+              <a href="#" class="card-link  linkInternoSite" data-toggle="modal" data-target="#modalValoresTeclado">Valores</a>
             </div>
-            <div class="card-footer text-muted">Rodapé do Card</div>
           </div>
 
         </div>
@@ -247,11 +244,11 @@
 
       <!--Jumbotron-->
 
-    <div class="jumbotron jumbotron-fluid" id="videos" style="background: radial-gradient(circle, rgba(118,130,166,1) 0%, rgba(118,130,166,1) 0%, rgba(255,255,255,1) 100%);">
+    <div class="jumbotron jumbotron-fluid" style="background: radial-gradient(circle, rgba(118,130,166,1) 0%, rgba(118,130,166,1) 0%, rgba(255,255,255,1) 100%);">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="display-4"><i class="fa fa-film" style="color: #221e40;"></i> Vídeos</h1>
+            <h1 class="display-4" id="videos"><i class="fa fa-film" style="color: #221e40;"></i> Vídeos</h1>
             <p class="lead">Conheça um pouco dos covers que faço no meu tempo livre</p>
             <hr>
           </div>
@@ -266,10 +263,13 @@
                 <a class="nav-link active linkJumbotron" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Cinder Sidharta - Everdream (Nightwish Cover)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link linkJumbotron" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">A noiva cadáver - Ele ainda te conhece tão mal</a>
+                <a class="nav-link linkJumbotron" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Never Enough - Cover</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link linkJumbotron" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Tomorrow - Annie the musical</a>
+                <a class="nav-link linkJumbotron" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">A noiva cadáver - Ele ainda te conhece tão mal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkJumbotron" id="nav-pills-04" data-toggle="pill" href="#nav-item-04">Tomorrow - Annie the musical</a>
               </li>
             </ul>
 
@@ -289,12 +289,21 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/lia0GMiSyqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/tKRyMmTdMKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/lia0GMiSyqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-item-04" role="tabpanel">
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="embed-responsive embed-responsive-16by9">
@@ -313,16 +322,16 @@
 
      <!--Formulario-->
 
-     <div class="container" id="depoimentos">
+     <div class="container">
       <div class="row">
         <div class="col-12 text-center my-5">
-          <h1 class="display-4"><i class="fa fa-paper-plane-o" aria-hidden="true" style="color: #221e40;"></i> Deixe uma mensagem </h1>
+          <h1 class="display-4" id="depoimentos"><i class="fa fa-paper-plane-o" aria-hidden="true" style="color: #221e40;"></i> Deixe uma mensagem </h1>
           <p class="lead">Se você é ou já foi meu aluno, deixe sua mensagem sobre sua experiência com minhas aulas</p>
         </div>
       </div>
       <div class="row justify-content-center mb-5">
         <div class="col-sm-12 col-md-10 col-lg-8 ">
-          <form>
+          <form onsubmit="salvar()">
             <div class="form-row">
               <div class="form-group col-sm-12">
                 <label for="inputNome">Seu Nome</label>
@@ -343,8 +352,8 @@
               
             <div class="form-row">
               <div class="form-group col-sm-12">
-              <label for="inputNome">Seu comentário</label>
-                <textarea type="text" class="form-control" id="inputComent" placeholder="Texto"></textarea>
+              <label for="inputComent">Seu comentário</label>
+                <input type="text" class="form-control" id="inputComent" placeholder="Texto">
               </div>
             </div>
 
@@ -360,7 +369,7 @@
 
             <div class="form-row">
               <div class="col-sm-12">
-                <button type="submit" class="btn text-light" style="background-color: #221e40;">Enviar</button>
+                <input type="submit" class="btn text-light" style="background-color: #221e40;" value="Enviar" id="btnSalvar">
                 <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Texto de ajuda" data-content="Texto que vai dentro do Popover para ajudar o Usuário a preencher o formulário">Ajuda</a>
               </div>
             </div>
@@ -383,8 +392,8 @@
 
           <div class="col-sm-4">
             <h3>Sobre mim</h3>
-            <p>Professora de Canto Popular e Erudito formada pela Fiam Faam, com mais de 5 anos de experiência em ensino</p>
-            <p>Participei por 2 anos do Coral Juvenil Santa Marcelina, Madrigal Vivace, dentre outros</p>
+            <p>Professora de Canto Popular e Erudito formada pela Fiam Faam, com mais de 5 anos de experiência em ensino, desde aulas de iniciação musical até técnicas vocais apromiradas.</p>
+            <p>Participei do Coral Juvenil Santa Marcelina por 3 anos, fiz apresentações em locais de prestígio como Sala São Paulo, Tuca Arena e Catedral da Sé em Sâo Paulo e Santuário Dom Bosco em Brasília.</p>
           </div>
 
         <!--Social-->
@@ -425,17 +434,44 @@
 
           <div class="modal-header">
             <h5 class="modal-title">Exercícios de Respiração, desenvolvimento vocal e inicialização infantil</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>x</span>
-            </button>
           </div>
 
           <div class="modal-body">
             <p>
-              Você sabia que quando nascemos, já nascemos sabendo respirar? E que ao longo da vida, criamos hábitos respiratórios ruins que nos fazem "desaprender" a respiração mais correta e eficiente?
+              Você sabia que quando nascemos, já nascemos sabendo respirar da forma correta para cantar? E que ao longo da vida, criamos hábitos respiratórios ruins que nos fazem "desaprender" a respiração mais correta e eficiente?
               Essa é a razão pela qual muitos que tentam cantar sem instruções adequadas causam danos ao corpo, dos mais variados tipos. Com os exercícios corretos você reaprende a respirar para usar seu corpo para produzir som sem danos colaterais!
               Cantores profissionais e amadores podem ser instruídos de forma que consigam extrair o máximo de suas vozes, crianças ou adultos, de qualquer idade podem ter acesso a essas instruções.
             </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalValoresCanto" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div>
+              <h4>Aulas particulares de técnicas</h4>
+            <h5>A partir de</h5>
+            <h6>R$200,00
+              mensal</h6>
+            </div>
+            <div>
+              <h4>Iniciação musical</h4>
+            <h5>A partir de</h5>
+            <h6>R$200,00
+              mensal</h6>
+            </div>
+            <div>
+              <p>Descontos para cursos conjuntos e turmas a partir de 3 pessoas com 50% de desconto por aluno!</p>
+            </div>
+          
           </div>
 
           <div class="modal-footer">
@@ -452,17 +488,44 @@
 
           <div class="modal-header">
             <h5 class="modal-title">Violão e Ukulele para iniciantes</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>x</span>
-            </button>
           </div>
 
           <div class="modal-body">
             <p>
-              Na música costumamos dizer que o violão é o companeiro do cantor. Além de ser um instrumento muito versátil e de fácil transporte, é muito procurado por cantores ou mesmo músicos que queiram começar a carreira nesse instrumento tão popular.
+              Na música costumamos dizer que o violão é o companheiro do cantor. Além de ser um instrumento muito versátil e de fácil transporte, é muito procurado por cantores ou mesmo músicos que queiram começar a carreira nesse instrumento tão popular.
               Minhas aulas de violão servem para cantores que queiram aprender como usar o violão como auxílio para evoluir musicalmente e crianças que estejam tendo seu primeiro contato com o instrumento.
               O Ukulele também tem se tornado popular entre a geração de músicos atual devido a facilidade de transporte e versatilidade parecida com a do violão. Ele permite explorar estilos diferentes de música sem deixar de lado a simplicidade.
             </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalValoresViolao" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div>
+              <h4>Aulas particulares Adulto</h4>
+            <h5>A partir de</h5>
+            <h6>R$200,00
+              mensal</h6>
+            </div>
+            <div>
+              <h4>Iniciação musical Infantil</h4>
+            <h5>A partir de</h5>
+            <h6>R$200,00
+              mensal</h6>
+            </div>
+            <div>
+              <p>Descontos para cursos conjuntos e turmas a partir de 3 pessoas com 50% de desconto por aluno!</p>
+            </div>
+          
           </div>
 
           <div class="modal-footer">
@@ -479,17 +542,44 @@
 
           <div class="modal-header">
             <h5 class="modal-title">Ajuda na teoria e inicialização infantil</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>x</span>
-            </button>
           </div>
 
           <div class="modal-body">
-            <p>O piano ou teclado podem ser instrumentos incrivelmente úteis para o aprendizado da parte teórica da música. Com ele podemos aprender o nome das notas, entender o alcance da nossa voz, treinar o ouvido e muito mais!
+            <p>O piano ou teclado podem ser instrumentos incrivelmente úteis para o aprendizado da parte teórica da música. Não significa que é o único instrumento que oferece isso, mas com ele podemos aprender o nome das notas, entender o alcance da nossa voz, treinar o ouvido e muito mais!
               Quem aprende o instrumento e gosta dele, já inicia um caminho para se especializar e avançar cada vez mais nos infinitos níveis que o Piano oferece.
               O Piano é o instrumento preferido de muitas crianças que têm seu primeiro contato com a música, pois o simples fato de apertar as teclas entrega diferentes sons, o que desperta o interesse natural das crianças.
               Com as aulas de inicialização infantil é possível introduzir a criança no mundo da música de maneira divertida e simples, dando o primeiro passo para um mundo de escolhas dentro da música.
             </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalValoresTeclado" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div>
+              <h4>Aulas particulares Adulto</h4>
+            <h5>A partir de</h5>
+            <h6>R$200,00
+              mensal</h6>
+            </div>
+            <div>
+              <h4>Iniciação musical Infantil</h4>
+            <h5>A partir de</h5>
+            <h6>R$200,00
+              mensal</h6>
+            </div>
+            <div>
+              <p>Descontos para cursos conjuntos e turmas a partir de 3 pessoas com 50% de desconto por aluno!</p>
+            </div>
+          
           </div>
 
           <div class="modal-footer">
@@ -505,6 +595,7 @@
     <script src="./node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js" type="text/javascript"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/db.js" type="text/javascript"></script>
 
     <!--Javascript do Popover-->
     <script>
